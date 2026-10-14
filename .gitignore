@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Ollama 程序本体与模型库（体积过大，通过官方渠道下载）
+ollama-app/
+ollama-models/
+offline-installer/
+
+# 参考源码仓库（clone 副本，体积大）
+reference-src/
+
+# 备份
+backup/
+
+# RAG 向量库（可由 data/ 重建）
+iot_rag/storage/
+
+# 生成的 PDF 语料（可由 make_sample_manual.py 重建）
+iot_rag/data/*.pdf
+
+# 日志与临时输出
+*.log
+*.tmp
+tools/*.txt
+tools/*.json
+tools/*.bat
